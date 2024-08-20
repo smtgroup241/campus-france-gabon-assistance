@@ -409,6 +409,7 @@ form select {
     .big-title {
         font-size: 24px;
         line-height: 1.2;
+        padding: 10px;
     }
 
     nav.nav ul {
@@ -429,12 +430,13 @@ form select {
     .services-section .container {
         flex-direction: column;
         align-items: center;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
     .service-pack {
         width: 100%;
         margin: 20px 0;
+        padding: 15px; 
     }
 
     footer.footer {
@@ -464,10 +466,12 @@ form select {
 
     .service-pack h2 {
         font-size: 20px; 
+        padding-bottom: 10px;
+
     }
 
     .service-pack ul {
-        padding: 0 20px; 
+        padding: 0 10px; 
     }
 
     footer.footer {
