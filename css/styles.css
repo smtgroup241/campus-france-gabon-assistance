@@ -21,6 +21,8 @@ header.header {
 
 header.header img {
     width: 80px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Menu de navigation */
@@ -350,7 +352,7 @@ form select {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .big-title {
         font-size: 36px;
     }
@@ -362,23 +364,20 @@ form select {
     .news-title {
         font-size: 20px;
     }
-}
+} */
 
 
 /*-----------------------------------------------------*/
-
-/* Media Queries */
+/* Responsive pour les tablettes (768px et moins) */
 @media (max-width: 768px) {
-    /* Styles responsives pour les petits écrans */
-
-    /* Menu de navigation */
-    nav.nav ul {
+    header.header {
         flex-direction: column;
-        display: none;
+        align-items: flex-start;
     }
 
-    nav.nav ul.show {
-        display: flex;
+    nav.nav ul {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     nav.nav ul li {
@@ -386,25 +385,9 @@ form select {
         font-size: 20px;
     }
 
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-
-    /* Section d'introduction */
-    section.top-page {
-        height: auto;
-        padding: 20px;
-    }
-
     .big-title {
         font-size: 36px;
-    }
-
-    /* Services */
-    .services-section .container {
-        flex-direction: column;
-        width: 100%;
+        text-align: center;
     }
 
     .service-pack {
@@ -412,24 +395,51 @@ form select {
         margin: 10px 0;
     }
 
-    /* Page de contact */
-    .contact-page {
-        padding: 20px;
-        max-width: 100%;
-    }
-
-    form .form-group {
-        width: 100%;
-    }
-
-    /* Actualités */
-    .news-section .container {
+    .container {
         flex-direction: column;
-        gap: 20px;
+    }
+}
+
+/* Responsive pour les téléphones (390px et moins, comme l'iPhone 12) */
+@media (max-width: 390px) {
+    header.header img {
+        width: 50px;
     }
 
-    .news-item {
+    .big-title {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    nav.nav ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    nav.nav ul li {
+        margin: 8px 0;
+        font-size: 18px;
+    }
+
+    section.top-page {
+        padding: 10px;
+        height: auto;
+    }
+
+    .services-section .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .service-pack {
         width: 100%;
+        margin: 20px 0;
+    }
+
+    footer.footer {
+        font-size: 14px;
+        padding: 10px;
     }
 }
 
