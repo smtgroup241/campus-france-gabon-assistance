@@ -175,7 +175,7 @@ form {
 }
 
 form label {
-    display: block;
+    display: flex;
     font-weight: bold;
     margin-bottom: 0px;
 }
@@ -297,7 +297,7 @@ form select {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
@@ -335,7 +335,7 @@ form select {
 }
 
 .read-more {
-    display: inline-block;
+    display: flex;
     padding: 10px 20px;
     color: white;
     background-color: #007bff;
@@ -364,6 +364,74 @@ form select {
     }
 }
 
+
+/*-----------------------------------------------------*/
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Styles responsives pour les petits écrans */
+
+    /* Menu de navigation */
+    nav.nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav.nav ul.show {
+        display: flex;
+    }
+
+    nav.nav ul li {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Section d'introduction */
+    section.top-page {
+        height: auto;
+        padding: 20px;
+    }
+
+    .big-title {
+        font-size: 36px;
+    }
+
+    /* Services */
+    .services-section .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .service-pack {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Page de contact */
+    .contact-page {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    form .form-group {
+        width: 100%;
+    }
+
+    /* Actualités */
+    .news-section .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .news-item {
+        width: 100%;
+    }
+}
 
 /*-----------------------------------------------------*/
 
