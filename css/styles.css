@@ -81,7 +81,7 @@ section.top-page {
 /* Section des services */
 .services-section {
     /*background-color: #f9f9f9;*/
-    /*padding: 50px 50px;*/
+    /*padding: 0;*/
     /*flex: 1;*/
     display: flex;
     flex-direction: column;
@@ -105,10 +105,10 @@ section.top-page {
 .service-pack {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #f4e406;
-    padding: 8px;
+    padding: 0px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 30px;
+    margin: 20px;
     width: 30%;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
