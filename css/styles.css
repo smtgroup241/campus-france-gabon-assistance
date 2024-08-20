@@ -368,7 +368,7 @@ form select {
 
 
 /*-----------------------------------------------------*/
-/* Responsive pour les tablettes (768px et moins) */
+/* Responsive pour les tablettes*/
 @media (max-width: 768px) {
     header.header {
         flex-direction: column;
@@ -400,7 +400,7 @@ form select {
     }
 }
 
-/* Responsive pour les téléphones (390px et moins, comme l'iPhone 12) */
+/* Responsive pour les téléphones  */
 @media (max-width: 390px) {
     header.header img {
         width: 50px;
@@ -440,6 +440,31 @@ form select {
     footer.footer {
         font-size: 14px;
         padding: 10px;
+    }
+}
+
+/* Pour les petits écrans*/
+@media (max-width: 390px) {
+    .services-section .container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .service-pack {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .service-pack h2 {
+        font-size: 20px; 
+    }
+
+    .service-pack ul {
+        padding: 0 20px; 
+    }
+
+    footer.footer {
+        font-size: 14px; 
     }
 }
 
