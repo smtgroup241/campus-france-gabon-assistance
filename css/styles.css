@@ -441,6 +441,13 @@ form select {
         font-size: 14px;
         padding: 10px;
     }
+
+    .about-page h1 {
+        color: rgb(248, 236, 6);
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif; 
+    }
 }
 
 /* Pour les petits écrans*/
